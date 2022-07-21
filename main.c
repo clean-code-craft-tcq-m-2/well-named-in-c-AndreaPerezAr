@@ -33,7 +33,7 @@ void ReferenceManual()
     for(pair_number=1;pair_number<=TOTAL_PAIRS;pair_number++)
     {
         ColorPair colorPair = GetColorFromPairNumber(pair_number);
-        printf("%n    ", pair_number);
+        printf("%d    ", pair_number);
         char colorPairNames[MAX_COLORPAIR_NAME_CHARS];
         ColorPairToString(&colorPair, colorPairNames);
         printf("\n");
