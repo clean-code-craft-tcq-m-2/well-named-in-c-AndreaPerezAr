@@ -27,6 +27,20 @@ void testPairToNumber(
     assert(pairNumber == expectedPairNumber);
 }
 
+void ReferenceManual()
+{
+    int pair_number;
+    int total_pairs=25;
+
+    for(pair_number=1;pair_number<=total_pairs;pair_number++)
+    {
+        ColorPair colorPair = GetColorFromPairNumber(int pair_number);
+        printf("%n    ", pair_number);
+        char colorPairNames[MAX_COLORPAIR_NAME_CHARS];
+        ColorPairToString(&colorPair, colorPairNames);
+    }
+}
+
 int main() {
     testNumberToPair(4, WHITE, BROWN);
     testNumberToPair(5, WHITE, SLATE);
@@ -34,5 +48,6 @@ int main() {
     testPairToNumber(BLACK, ORANGE, 12);
     testPairToNumber(VIOLET, SLATE, 25);
 
+    ReferenceManual();
     return 0;
 }
