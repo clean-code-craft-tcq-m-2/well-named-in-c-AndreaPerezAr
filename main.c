@@ -38,6 +38,7 @@ void ReferenceManual()
         printf("%n    ", pair_number);
         char colorPairNames[MAX_COLORPAIR_NAME_CHARS];
         ColorPairToString(&colorPair, colorPairNames);
+        printf("\n");
     }
 }
 
